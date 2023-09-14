@@ -15,4 +15,4 @@ jobs:
       - name: Build and Push Docker image
         run: |
             echo
-            docker build -t "testing actions":$(echo ${{ github.sha }} | cut -c 1-8) . --push
+            docker build -t "testing-actions":$(echo ${{ github.sha }} | cut -c 1-8) . --push
